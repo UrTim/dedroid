@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         protected String doInBackground(String... arg){
             Document doc;
             try{
-                doc = Jsoup.connect("https://jsoup.org/cookbook/input/load-document-from-url").get();
+                doc = Jsoup.connect("https://jsoup.org/cookbook/input/load-document-from-url").get(); //official jsoup site
                 content = doc.select(".col1");
                 List.clear();
                 for(Element el:content){
